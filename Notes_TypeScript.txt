@@ -1,0 +1,31 @@
+JavaScript is a subset of TypeScript.
+TypeScript provides type safety. Ex: If a property is not defined in an object, it shows when you type in the code but JS allows typing (ex: user.email no error underline). JS allows 2 + "2" and give '22'. But it doesn't allow in TS.
+Provides static checking - Giving errors while writing the code and analyzing the code.
+TS code is converted to a JS code before running.
+TS is a development tool.
+
+Advantage of TS - It automatically checks what type of input/output should be coming in or going out. No need to check explicitly. Ex: In a function, input parameter types and return variables.
+
+TSlang playground - can compare TS and JS codes
+https://www.typescriptlang.org/play/
+
+Official doc - https://www.typescriptlang.org/docs/
+
+Globally Installing TypeScript
+First node must be installed. Check version --> node -v
+--> npm install -g typescript
+--> tsc -v
+
+Create a .ts file.
+
+To run it
+--> tsc intro.ts
+This will create the corresponding JS file
+
+Types available in TS - Number, String, Boolean, Null, Undefined, Void, Object, Array, Tuples, Never, Unknown and more.
+Any - ignores type. Using this is not a good practice.
+Cannot specifically say integers or floats. Only numbers.
+
+TS variable declaration
+let variableName: type = value
+Always :type giving the type is not a good practice. It's overworking the TS.
