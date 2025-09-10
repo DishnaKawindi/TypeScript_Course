@@ -39,8 +39,8 @@ function consoleError(errmsg: string): void {
 }
 
 // some functions never return a value
-function handleError(msg: string): never {
-    throw new Error(msg);
+function handleError(errmsg: string): never {
+    throw new Error(errmsg);
 }
 
 export {}
