@@ -29,3 +29,35 @@ Cannot specifically say integers or floats. Only numbers.
 TS variable declaration
 let variableName: type = value
 Always :type giving the type is not a good practice. It's overworking the TS.
+
+
+03. Pure TS
+
+--> tsc --init
+This will create a TS config file
+
+--> npm init -y
+creates the package.json file. By adding -y it does not ask questions
+
+Then create index.html file. Hit ! and enter to auto type the default html file. Include script tag in the body.
+
+Then create src and dist directories. Add index.ts in src and index.js in dist.
+Then add the index.js file path in index.html.
+
+To indicate how the TS will be converted, go to the tsconfig file and modify this line. Enter the directory name of JS file.
+"outDir": "./dist"
+
+--> tsc -w
+Watch mode. This is going to keep things running and the JS file will be auto compiled.
+
+To run the index.html, install lite-server. Can use liveserver as well but this is better.
+--> npm i lite-server
+Then change the package.json script to
+"start": "lite-server"
+
+Then start the server
+--> npm start
+Also keep the tsc watch mode running
+--> tsc -w
+
+
