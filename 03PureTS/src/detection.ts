@@ -1,4 +1,4 @@
-// Documentation - Narrowinf
+// Documentation - Narrowing
 // problem - typeof [1,2,3] and null are detected as "object"
 
 // simple example
